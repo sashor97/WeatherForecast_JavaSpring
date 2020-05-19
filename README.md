@@ -10,4 +10,4 @@
 - Доколку има потреба да се промени името на базата или корисникот тоа треба да се направи во application.properties
 - Доколку користите IntelliJ IDEA Ultimate Edition, самото IDE има вграден Spring Initializr кој ќе го конфигурира backend делот. Потребно е само да ја стартувате апликацијата во Run или Debug mode.
 - Откако ќе се изврши успешно потребно е на web browser да се пристапи до URL-to http://localhost:8080/weather/all со цел да се прочитаат податоците од OpenWeatherMap API и да се запишат во база.
-- Упатството за стартување на ReactJS апликацијата е дадено на https://github.com/sashor97/Weather_Forecast_ReactJS.git при што прво мора да направите npm install во terminal со цел да ги инсталирате сите потребни depedency и библиотеки. па потоа да направите npm start.
+- Упатството за стартување на ReactJS апликацијата е дадено на https://github.com/sashor97/Forecast_ReactJS.git при што прво мора да направите npm install во terminal со цел да ги инсталирате сите потребни depedency и библиотеки. па потоа да направите npm start.
