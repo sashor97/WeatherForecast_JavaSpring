@@ -10,4 +10,9 @@ public interface OpenWeatherService {
     OpenWeather save(OpenWeather openWeather);
     List<OpenWeather> filterByTemperature(Double maxTemperature);
     List<OpenWeather> filterByTemperatureAbove25();
+    void saveAll(List<OpenWeather> weatherList);
+    List<OpenWeather> evaluate(String cityName);
+    void deleteAll();
+    long count();
+
 }
