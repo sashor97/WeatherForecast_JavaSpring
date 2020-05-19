@@ -14,12 +14,7 @@ class DemoApplicationTests {
     @Autowired
     private OpenWeatherService openWeatherService;
 
-    @Test
-    public void whenDeleteAllFromRepository_thenRepoShouldBeEmpty(){
-        this.openWeatherService.deleteAll();
-        Assert.assertEquals(openWeatherService.count(),0);
 
-    }
     @Test
     public void testingFirstResultTemp_GreaterThan25(){
         Assert.assertTrue(openWeatherService.filterByTemperatureAbove25().get(0).getMaxTemp()>=25.00);
@@ -37,6 +32,12 @@ class DemoApplicationTests {
     @Test
     void testThatAreCitiesWith_MaxTempAbove25InNext16Days(){
         Assert.assertTrue(openWeatherService.filterByTemperatureAbove25().size()>0);
+
+    }
+    @Test
+    public void whenDeleteAllFromRepository_thenRepoShouldBeEmpty(){
+        this.openWeatherService.deleteAll();
+        Assert.assertEquals(openWeatherService.count(),0);
 
     }
 
